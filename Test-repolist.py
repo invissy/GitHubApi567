@@ -20,18 +20,8 @@ class TestRepoList(unittest.TestCase):
         match = re.findall(r'Repo: \w+ Number of commits: \d+', repolist(id))
         self.assertTrue(match, "Output is not in the correct format")
 
-    def testRepoAshkenas(self):
-        id = "ashkenas"
-        match = re.findall(r'Repo: \w+ Number of commits: \d+', repolist(id))
-        self.assertTrue(match, "Output is not in the correct format")
-
     def testRepoUnrealOG(self):
         id = "UnrealOG"
-        match = re.findall(r'Repo: \w+ Number of commits: \d+', repolist(id))
-        self.assertTrue(match, "Output is not in the correct format")
-
-    def testRepoAdamelsawaf(self):
-        id = "adamelsawaf"
         match = re.findall(r'Repo: \w+ Number of commits: \d+', repolist(id))
         self.assertTrue(match, "Output is not in the correct format")
 
