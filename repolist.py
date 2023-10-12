@@ -10,5 +10,6 @@ def repolist(id):
         commits = req.json()
         allrepos += "Repo: " + repos[i]['name'] + " Number of commits: " + str(len(commits)) + "\n"
     print(allrepos)
+    return allrepos
 
 repolist("invissy")
